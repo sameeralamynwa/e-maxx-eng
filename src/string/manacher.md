@@ -68,7 +68,7 @@ Terminal characters `$` and `^` were used to avoid dealing with ends of the stri
 
 We describe the algorithm to find all the sub-palindromes with odd length, i. e. to calculate $d_1[]$.
 
-For fast calculation we'll maintain the **borders $(l, r)$** of the rightmost found (sub-)palindrome (i. e. the current rightmost (sub-)palindrome is $s[l+1] s[l+2] \dots s[r-1]$). Initially we set $l = 0, r = 1$, which corresponds to the empty string.
+For fast calculation we'll maintain the **borders $(l, r)$** of the rightmost found (sub-)palindrome (i. e. the current rightmost (sub-)palindrome is $s[l+1] s[l+2] \dots s[r-1]$). Initially we set $l = 1, r = 1$, which corresponds to the empty string.
 
 So, we want to calculate $d_1[i]$ for the next $i$, and all the previous values in $d_1[]$ have been already calculated. We do the following:
 
